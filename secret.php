@@ -9,6 +9,9 @@
     if(isset($_POST['password']) AND $_POST['password'] == "123456789")
     {
     ?>
+    <p>
+        Hello <?php echo $_POST['pseudo']; ?> !
+    </p>
     <h1> Here is the access code : </h1>
     <p><strong>CRD5-GTFT-CK65-JOPM-V29N-24G1-HH28-LLFV</strong></p>
 
