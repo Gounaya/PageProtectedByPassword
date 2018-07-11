@@ -8,8 +8,12 @@
     <p>Plese enter the password to obtain access 
     codes to NASA's server</p>
     <form action="secret.php" method="post">
-        <p>
-            <input type="password" name="password">
+        <p> <label>pseudo :
+                <input type="text" name="pseudo">
+            </label><br>
+            <label>password :
+                <input type="password" name="password">
+            </label><br>
             <input type="submit" value="Valid">
         </p>
     </form>
