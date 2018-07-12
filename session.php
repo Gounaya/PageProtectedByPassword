@@ -4,7 +4,11 @@
     $_SESSION['prenom'] = 'Oussama';
     $_SESSION['nom'] = 'Gounaya';
     $_SESSION['age'] = 21;
+    //create a cookie
+    setcookie('pseudo', 'Gounaya', time() + 365*24*3600, null, null, false, true);
+    setcookie('pays', 'France', time() + 365*24*3600, null, null, false, true);
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,6 +18,7 @@
     <body>
     <p>
         Salut <?php echo $_SESSION['prenom']; ?> !<br />
+        pseudo : <?php $_COOKIE['pseudo']; ?> <br>
         Tu es à l'accueil de mon site (index.php). Tu veux aller sur une autre page ?
     </p>
     <p>
